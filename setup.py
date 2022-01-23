@@ -1,6 +1,5 @@
 from setuptools import setup
 
-
 setup(
     author='Lisovq',
     author_email='lisov@internet.ru',
@@ -10,8 +9,8 @@ setup(
     description='VKontakte captcha solver',
     url="https://github.com/Lisovq/vk_solver",
 
-    packages=['vk_solver'],
-    python_requires=">=3.9",
+    packages=['vk_solver', 'vk_solver.models'],
+    python_requires=">=3.7",
 
     include_package_data = True,
     install_requires = ["Pillow", "onnxruntime", "numpy"],
